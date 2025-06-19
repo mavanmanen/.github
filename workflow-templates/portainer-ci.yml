@@ -1,0 +1,13 @@
+name: {NAME}
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - {FOLDER}/docker-compose.yml
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call webhook
+        run: curl -n "{URL}" -X POST

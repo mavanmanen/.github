@@ -1,0 +1,10 @@
+{
+    "name": "Portainer CI",
+    "description": "Portainer CI workflow template.",
+    "iconName": "octicon container",
+    "categories": [
+        "continuous-integration",
+        "deployment",
+        "automation"
+    ]
+}
