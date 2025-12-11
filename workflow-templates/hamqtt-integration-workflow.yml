@@ -1,14 +1,21 @@
-name: HAMQTT Integration Workflow
+name: HAMQTT Integration Workflow - #INTEGRATION_NAME#
+
+env:
+  INTEGRATION_NAME: INTEGRATION_NAME
 
 on:
   push:
-    branches: [ "$default-branch" ]
+    branches: [ $default-branch ]
     tags: [ 'v*.*.*' ]
+    paths:
+      - HAMQTT.Integration.${{ env.INTEGRATION_NAME }}/**
   pull_request:
-    branches: [ "$default-branch" ]
+    branches: [ $default-branch ]
+    paths:
+      - HAMQTT.Integration.${{ env.INTEGRATION_NAME }}/**
 
 jobs:
   build:
     uses: mavanmanen/HAMQTT/.github/workflows/hamqtt-integration-workflow.yml@main
     with:
-      image_name: my-new-app
+      integration_name: ${{ env.INTEGRATION_NAME }}
