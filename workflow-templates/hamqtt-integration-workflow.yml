@@ -10,6 +10,6 @@ on:
 
 jobs:
   build:
-    uses: mavanmanen/HAMQTT/.github/workflows/hamqtt-integration-workflow.yml@main
+    uses: mavanmanen/.github/workflows/hamqtt-integration-workflow.yml@main
     with:
       integration_name: { INTEGRATION_NAME }
