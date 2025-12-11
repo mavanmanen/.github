@@ -1,0 +1,9 @@
+{
+  "name": "HAMQTT Integration Workflow",
+  "description": "Workflow template for building and publishing new HAMQTT integrations.",
+  "iconName": "docker",
+  "categories": [
+    "Deployment",
+    "Container"
+  ]
+}
