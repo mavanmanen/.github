@@ -1,6 +1,7 @@
 name: HAMQTT Integration Workflow - { INTEGRATION_NAME }
 
 on:
+  workflow_dispatch:
   push:
     branches: [ $default-branch ]
     tags: [ 'v*.*.*' ]
